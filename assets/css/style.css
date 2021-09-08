@@ -1,0 +1,47 @@
+body {
+    background-color: #bdc3c7;
+}
+h1 {
+    color:#9b59b6;
+}
+h1:hover{
+    color: blue;
+}
+h2 {
+    color:orange;
+}
+li {
+    color: rgb(22, 125, 165);
+}
+p {
+    color: yellow;
+}
+input {
+    border: 3px solid red;
+}
+.hello {
+    background-color: white;
+}
+.special {
+    border: 2px solid blue;
+}
+.special::first-letter {
+    font-size: 100px;  
+    color: green;
+}
+div > p{
+    font-size: 25px;
+}
+input[type=text] {
+    background-color: grey;
+}
+/* not done */
+div:nth-of-type(3) p {
+    background-color: pink;
+}
+label {
+    text-transform: uppercase;
+}
+a:visited {
+    color: grey;
+}

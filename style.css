@@ -1,0 +1,142 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Mano CSS */
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.contact-header li {
+    font-size: 30px;
+}
+.contact-header {
+	float:left;
+}
+.clear-both {
+	clear: both;
+}
+.contact-header a {
+    text-decoration: none;
+}
+
+.contact-header a:hover {
+    text-decoration: underline;
+    color: green;
+}
+.top-header > li{
+	display: inline-block;
+}
+.contact-header li:last-child {
+    background: lightcoral;
+	padding: 24px 100px 50px;
+}
+/*Mygtukas */
+.btn {
+	font-size: 32px;
+	background-color: lightskyblue;
+	color: white;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 10px;
+	transition: background-color 500ms, color 1s;
+}
+.btn-pirkti {
+	width: 175px;
+	height: 50px;
+	position: relative;
+	overflow: hidden;
+	transition: transform  1s;
+	transform: scale(1);
+
+	
+}
+.content {
+	position: absolute;
+	left:0;
+	width: 100%;
+	transition: all 1s;
+}
+.btn:hover {
+	background: rgb(255, 143, 52);
+	color: rgb(172, 41, 41);
+}
+.top{
+	top:8px;
+	opacity: 1;
+}
+.bottom {
+	top:58px;
+}
+
+.btn-pirkti:hover .top{
+	top:-50px;
+	opacity: 0;
+
+}
+.btn-pirkti:hover .bottom{
+	top: 8px;
+	opacity: 1;
+
+}
+.btn-flash{
+	animation: betkoksPavadinimas 3s infinite;
+	animation-direction: alternate;
+	background:  blue;
+}
+
+@keyframes betkoksPavadinimas {
+	0% {
+		background: red;
+	}
+	50%{
+		background: chocolate;
+	}
+	100% {
+		background: blue;
+	}
+}

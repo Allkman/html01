@@ -1,0 +1,25 @@
+.flex-container {
+    display: flex;    
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .flex-container >div {
+    margin: 5px;
+    padding: 10px;
+  }
+  .flex-item-left {
+    padding: 10px;
+    flex: 50%;
+  }
+  .flex-item-right {
+    padding: 10px;
+    flex: 50%;
+  }
+  p {
+      font-size: 20px;
+  }
+  @media screen and (max-width: 500px) {
+    .flex-container {
+        flex-direction: column;
+      }
+  }
